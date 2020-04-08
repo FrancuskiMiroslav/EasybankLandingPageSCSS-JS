@@ -1,0 +1,36 @@
+$main_font: "Public Sans", sans-serif;
+$secondary_font: "Gilroy", cursive;
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai");
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.otf");
+  src: url("../fonts/Gilroy-ExtraBold.otf");
+}
+
+$darkBlue: hsl(233, 26%, 24%);
+$limeGreen: hsl(136, 65%, 51%);
+$brightCyan: hsl(192, 70%, 51%);
+
+$grayishBlue: hsl(233, 8%, 62%);
+$lightGrayishBlue: hsl(220, 16%, 96%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+$primary_clr: $darkBlue;
+$secondary_clr: $limeGreen;
+$tertiary_clr: $brightCyan;
+
+$show-image: true;
+$home-image: url(../images/home-bg-min.jpg);
+$background-opacity: 0.85;
+
+$fw-normal: 400;
+$fw-bold: 700;
+
+$min_width: 320px;
+$max_width: 3840px;
+$min_font: 14px;
+$max_font: 24px;
