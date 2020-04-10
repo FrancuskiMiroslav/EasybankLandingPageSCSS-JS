@@ -3,6 +3,7 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: $main_font, $secondary_font, Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
   }
 
   *,
@@ -22,8 +23,14 @@
     text-decoration: none;
   }
 
+  p {
+    color: $grayishBlue;
+    font-size: 18px;
+  }
+
   .btn {
     @include btn;
+    max-width: 175px;
   }
 }
 

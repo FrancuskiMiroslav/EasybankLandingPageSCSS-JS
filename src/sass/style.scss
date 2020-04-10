@@ -12,6 +12,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  z-index: 50;
 
   .top-nav {
     @include wrapper(1160, 25);
@@ -50,11 +51,11 @@ header {
       z-index: 50;
       background-color: lighten($color: $primary_clr, $amount: 30%);
       min-width: 100%;
-      padding: 0 2%;
+      padding: 0 11.5%;
       box-shadow: 2px 7px 10px -4px rgba(0, 0, 0, 0.75);
       @include media-max-width(800) {
         height: 60px;
-        padding: 10px;
+        padding: 15px;
       }
 
       .nav .fancy-link {
@@ -198,6 +199,10 @@ header {
       text-decoration: none;
       color: rgba($color: $grayishBlue, $alpha: 1);
       position: relative;
+      &:hover {
+        color: $primary_clr;
+        transition: 1s all;
+      }
       @include media-max-width(800) {
         color: $primary_clr;
         transition: 1s all;
@@ -234,9 +239,52 @@ header {
 }
 
 main {
-  height: 200px;
-  background-color: $tertiary_clr;
-  min-height: 2000px;
+  .banner {
+    @include wrapper(1160, 25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 660px;
+    &__left {
+      min-height: 315px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 49%;
+    }
+
+    &__title {
+      font-size: 60px;
+    }
+
+    &__right {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        background: url(../svg/bg-intro-desktop.svg) right top no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100vw;
+        left: 40%;
+        top: 52%;
+        z-index: -5;
+        transform: scale(1.8);
+
+        @include media-max-width(850) {
+          background: url(../svg/bg-intro-mobile.svg) right top no-repeat;
+          height: 100vw;
+          left: 65%;
+          top: 21%;
+        }
+      }
+    }
+
+    &__img {
+      transform: translate(235px, 20px) scale(1.2);
+      max-width: 100%;
+    }
+  }
 }
 
 footer {
