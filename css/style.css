@@ -495,11 +495,16 @@ main .banner__title {
 }
 
 /* line 279, src/sass/style.scss */
+main .banner__text {
+  margin-bottom: 20px;
+}
+
+/* line 283, src/sass/style.scss */
 main .banner__right {
   position: relative;
 }
 
-/* line 282, src/sass/style.scss */
+/* line 286, src/sass/style.scss */
 main .banner__right:after {
   position: absolute;
   content: "";
@@ -515,7 +520,7 @@ main .banner__right:after {
 }
 
 @media (max-width: 800px) {
-  /* line 282, src/sass/style.scss */
+  /* line 286, src/sass/style.scss */
   main .banner__right:after {
     background: url(../svg/bg-intro-mobile.svg) center center no-repeat;
     background-size: cover;
@@ -528,13 +533,14 @@ main .banner__right:after {
 }
 
 @media (max-width: 800px) {
-  /* line 306, src/sass/style.scss */
+  /* line 310, src/sass/style.scss */
   main .banner .btn {
     margin: auto;
+    font-size: 12px;
   }
 }
 
-/* line 312, src/sass/style.scss */
+/* line 317, src/sass/style.scss */
 main .banner__img {
   -webkit-transform: translate(235px, 20px) scale(1.2);
           transform: translate(235px, 20px) scale(1.2);
@@ -542,7 +548,7 @@ main .banner__img {
 }
 
 @media (max-width: 800px) {
-  /* line 312, src/sass/style.scss */
+  /* line 317, src/sass/style.scss */
   main .banner__img {
     -webkit-transform: translate(0px, -60px) scale(1);
             transform: translate(0px, -60px) scale(1);
@@ -550,21 +556,21 @@ main .banner__img {
   }
 }
 
-/* line 324, src/sass/style.scss */
+/* line 329, src/sass/style.scss */
 footer .attribution {
   color: #ffffff;
   text-align: center;
   padding: 25px;
 }
 
-/* line 328, src/sass/style.scss */
+/* line 333, src/sass/style.scss */
 footer .attribution a,
 footer .attribution a:visited,
 footer .attribution a:active {
   color: #2d314d;
 }
 
-/* line 333, src/sass/style.scss */
+/* line 338, src/sass/style.scss */
 footer .attribution a:hover,
 footer .attribution a:visited:hover,
 footer .attribution a:active:hover {
