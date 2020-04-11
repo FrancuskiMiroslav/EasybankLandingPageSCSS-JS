@@ -452,10 +452,11 @@ main .banner {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    overflow: hidden;
   }
 }
 
-/* line 257, src/sass/style.scss */
+/* line 258, src/sass/style.scss */
 main .banner__left {
   min-height: 315px;
   display: -webkit-box;
@@ -472,33 +473,33 @@ main .banner__left {
 }
 
 @media (max-width: 800px) {
-  /* line 257, src/sass/style.scss */
+  /* line 258, src/sass/style.scss */
   main .banner__left {
     width: 100%;
     text-align: center;
   }
 }
 
-/* line 269, src/sass/style.scss */
+/* line 270, src/sass/style.scss */
 main .banner__title {
   font-size: 60px;
   font-weight: 300;
 }
 
 @media (max-width: 800px) {
-  /* line 269, src/sass/style.scss */
+  /* line 270, src/sass/style.scss */
   main .banner__title {
     font-size: 40px;
     margin-bottom: 25px;
   }
 }
 
-/* line 278, src/sass/style.scss */
+/* line 279, src/sass/style.scss */
 main .banner__right {
   position: relative;
 }
 
-/* line 281, src/sass/style.scss */
+/* line 282, src/sass/style.scss */
 main .banner__right:after {
   position: absolute;
   content: "";
@@ -514,7 +515,7 @@ main .banner__right:after {
 }
 
 @media (max-width: 800px) {
-  /* line 281, src/sass/style.scss */
+  /* line 282, src/sass/style.scss */
   main .banner__right:after {
     background: url(../svg/bg-intro-mobile.svg) center center no-repeat;
     background-size: cover;
@@ -527,13 +528,13 @@ main .banner__right:after {
 }
 
 @media (max-width: 800px) {
-  /* line 305, src/sass/style.scss */
+  /* line 306, src/sass/style.scss */
   main .banner .btn {
     margin: auto;
   }
 }
 
-/* line 311, src/sass/style.scss */
+/* line 312, src/sass/style.scss */
 main .banner__img {
   -webkit-transform: translate(235px, 20px) scale(1.2);
           transform: translate(235px, 20px) scale(1.2);
@@ -541,7 +542,7 @@ main .banner__img {
 }
 
 @media (max-width: 800px) {
-  /* line 311, src/sass/style.scss */
+  /* line 312, src/sass/style.scss */
   main .banner__img {
     -webkit-transform: translate(0px, -60px) scale(1);
             transform: translate(0px, -60px) scale(1);
@@ -549,21 +550,21 @@ main .banner__img {
   }
 }
 
-/* line 323, src/sass/style.scss */
+/* line 324, src/sass/style.scss */
 footer .attribution {
   color: #ffffff;
   text-align: center;
   padding: 25px;
 }
 
-/* line 327, src/sass/style.scss */
+/* line 328, src/sass/style.scss */
 footer .attribution a,
 footer .attribution a:visited,
 footer .attribution a:active {
   color: #2d314d;
 }
 
-/* line 332, src/sass/style.scss */
+/* line 333, src/sass/style.scss */
 footer .attribution a:hover,
 footer .attribution a:visited:hover,
 footer .attribution a:active:hover {
