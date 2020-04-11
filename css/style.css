@@ -601,7 +601,7 @@ main .icon-cards__wrapper {
 
 /* line 345, src/sass/style.scss */
 main .icon-cards__title {
-  font-size: 30px;
+  font-size: 38px;
   margin-bottom: 40px;
 }
 
@@ -686,21 +686,132 @@ main .icon-cards__container .icon-card__title {
   }
 }
 
-/* line 401, src/sass/style.scss */
+/* line 399, src/sass/style.scss */
+main .img-cards {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 25px;
+  padding: 90px 25px;
+}
+
+/* line 403, src/sass/style.scss */
+main .img-cards__title {
+  font-size: 38px;
+  margin-bottom: 55px;
+}
+
+@media (max-width: 800px) {
+  /* line 403, src/sass/style.scss */
+  main .img-cards__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+/* line 412, src/sass/style.scss */
+main .img-cards__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+@media (max-width: 800px) {
+  /* line 412, src/sass/style.scss */
+  main .img-cards__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 421, src/sass/style.scss */
+main .img-cards__container > div:not(:last-child) {
+  margin-right: 30px;
+}
+
+@media (max-width: 800px) {
+  /* line 421, src/sass/style.scss */
+  main .img-cards__container > div:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 428, src/sass/style.scss */
+  main .img-cards__container .img-card {
+    margin-bottom: 40px;
+  }
+}
+
+/* line 433, src/sass/style.scss */
+main .img-cards__container .img-card__img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+/* line 440, src/sass/style.scss */
+main .img-cards__container .img-card__bottom {
+  padding: 30px;
+}
+
+/* line 444, src/sass/style.scss */
+main .img-cards__container .img-card__author {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+/* line 450, src/sass/style.scss */
+main .img-cards__container .img-card__title {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* line 454, src/sass/style.scss */
+main .img-cards__container .img-card__title a {
+  color: #2d314d;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+/* line 457, src/sass/style.scss */
+main .img-cards__container .img-card__title a:hover {
+  color: #31d35c;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+/* line 464, src/sass/style.scss */
+main .img-cards__container .img-card__text {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* line 474, src/sass/style.scss */
 footer .attribution {
   color: #ffffff;
   text-align: center;
   padding: 25px;
 }
 
-/* line 405, src/sass/style.scss */
+/* line 478, src/sass/style.scss */
 footer .attribution a,
 footer .attribution a:visited,
 footer .attribution a:active {
   color: #2d314d;
 }
 
-/* line 410, src/sass/style.scss */
+/* line 483, src/sass/style.scss */
 footer .attribution a:hover,
 footer .attribution a:visited:hover,
 footer .attribution a:active:hover {
