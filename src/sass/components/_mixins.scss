@@ -129,6 +129,10 @@
     opacity: 0.5;
     transition: 1s all;
   }
+
+  @include media-max-width(800) {
+    font-size: 12px;
+  }
 }
 
 @mixin easeOut {

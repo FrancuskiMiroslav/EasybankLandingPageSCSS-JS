@@ -316,7 +316,6 @@ main {
     .btn {
       @include media-max-width(800) {
         margin: 0 auto;
-        font-size: 12px;
       }
     }
 
@@ -505,7 +504,7 @@ footer {
         }
 
         .fill {
-            fill: $secondary_clr;
+          fill: $secondary_clr;
         }
       }
     }
@@ -540,10 +539,9 @@ footer {
         margin-bottom: 35px;
       }
 
-
-      .one{
+      .one {
         @include media-max-width(800) {
-         	margin-bottom: 20px;
+          margin-bottom: 20px;
         }
       }
     }
@@ -562,7 +560,7 @@ footer {
 
       @include media-max-width(800) {
         text-align: center;
-     }
+      }
 
       .btn {
         margin-bottom: 30px;
