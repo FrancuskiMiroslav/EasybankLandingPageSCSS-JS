@@ -276,6 +276,10 @@ main {
       }
     }
 
+    &__text {
+      margin-bottom: 20px;
+    }
+
     &__right {
       position: relative;
 
@@ -306,6 +310,7 @@ main {
     .btn {
       @include media-max-width(800) {
         margin: auto;
+        font-size: 12px;
       }
     }
 
