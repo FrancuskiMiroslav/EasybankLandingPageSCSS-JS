@@ -252,6 +252,7 @@ main {
     max-height: 660px;
     @include media-max-width(800) {
       flex-direction: column-reverse;
+      overflow: hidden;
     }
 
     &__left {
